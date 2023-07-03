@@ -1,0 +1,38 @@
+[{
+    "id": 1,
+    "nome": "AG1",
+    "funzionalita": "AGDL",
+    "status": true,
+    "master": "AG1",
+    "partner": "AG2",
+    "ip": "172.16.62.60"
+},
+{
+    "id": 3,
+    "nome": "AM1",
+    "funzionalita": "AMAN",
+    "status": false,
+    "master": "AM1",
+    "partner": "AM2",
+    "ip": "172.16.62.60"
+},
+{
+    "id": 5,
+    "nome": "BN1",
+    "funzionalita": "Best Node",
+    "status": true,
+    "master": "BN1",
+    "partner": "BN2",
+    "ip": "172.16.62.60"
+},
+{
+    "id": 7,
+    "nome": "FP1",
+    "funzionalita": "FDP",
+    "status": true,
+    "master": "FP2",
+    "partner": "FP2",
+    "ip": "172.16.62.60"
+}]
+
+

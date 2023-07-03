@@ -1,0 +1,20 @@
+.diag-example {
+    width: 300px;
+    /* height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    /* margin-left: 10px;
+    margin-right: 10px;  */
+    
+    
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+

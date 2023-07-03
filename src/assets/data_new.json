@@ -1,0 +1,155 @@
+[{
+    "id": 1,
+    "componente": "AGDL",
+    "status_component": true,
+    "nodi":[
+        {"nome": "AG1",
+        "funzionalita": "AGDL",
+        "status": true,
+        "master": "AG1",
+        "partner": "AG2",
+        "ip": "172.16.62.60"},
+        {"nome": "AG2",
+        "funzionalita": "AGDL",
+        "status": true,
+        "master": "AG1",
+        "partner": "AG1",
+        "ip": "172.16.62.61"}
+    ]
+},
+{
+    "id": 3,
+    "componente": "FDP",
+    "status_component": true,
+    "nodi":[
+        {"nome": "FP1",
+        "funzionalita": "FDP",
+        "status": true,
+        "master": "FP1",
+        "partner": "FP2",
+        "ip": "172.16.62.70"},
+        {"nome": "FP2",
+        "funzionalita": "FDP",
+        "status": true,
+        "master": "FP1",
+        "partner": "FP1",
+        "ip": "172.16.62.71"}
+    ]
+},
+{
+    "id": 5,
+    "componente": "MTCD",
+    "status_component": true,
+    "nodi":[
+        {"nome": "MT1",
+        "funzionalita": "MTCD",
+        "status": true,
+        "master": "MT2",
+        "partner": "MT2",
+        "ip": "172.16.62.80"},
+        {"nome": "MT2",
+        "funzionalita": "MTCD",
+        "status": true,
+        "master": "MT2",
+        "partner": "MT1",
+        "ip": "172.16.62.81"}
+    ]
+},
+{
+    "id": 7,
+    "componente": "MRT",
+    "status_component": true,
+    "nodi":[
+        {"nome": "RD1",
+        "funzionalita": "MRT",
+        "status": false,
+        "master": "RD2",
+        "partner": "RD2",
+        "ip": "172.16.62.10"},
+        {"nome": "RD2",
+        "funzionalita": "MRT",
+        "status": true,
+        "master": "RD2",
+        "partner": "RD1",
+        "ip": "172.16.62.11"}
+    ]
+},
+{
+    "id": 9,
+    "componente": "Best Node",
+    "status_component": true,
+    "nodi":[
+        {"nome": "BN1",
+        "funzionalita": "Best Node",
+        "status": false,
+        "master": "BN1",
+        "partner": "BN2",
+        "ip": "172.16.62.60"},
+        {"nome": "BN2",
+        "funzionalita": "Best Node",
+        "status": false,
+        "master": "BN2",
+        "partner": "BN1",
+        "ip": "172.16.62.61"}
+    ]
+},
+{
+    "id": 11,
+    "componente": "LNR",
+    "status_component": true,
+    "nodi":[
+        {"nome": "LN1",
+        "funzionalita": "LNR",
+        "status": false,
+        "master": "LN2",
+        "partner": "LN2",
+        "ip": "172.16.62.70"},
+        {"nome": "LN2",
+        "funzionalita": "LNR",
+        "status": true,
+        "master": "LN2",
+        "partner": "LN1",
+        "ip": "172.16.62.71"}
+    ]
+},
+{
+    "id": 13,
+    "componente": "MNA",
+    "status_component": true,
+    "nodi":[
+        {"nome": "MN1",
+        "funzionalita": "MNA",
+        "status": false,
+        "master": "MN2",
+        "partner": "MN2",
+        "ip": "172.16.62.80"},
+        {"nome": "MN2",
+        "funzionalita": "MNA",
+        "status": true,
+        "master": "MN2",
+        "partner": "MN1",
+        "ip": "172.16.62.81"}
+    ]
+},
+{
+    "id": 15,
+    "componente": "VIF",
+    "status_component": true,
+    "nodi":[
+        {"nome": "VG1",
+        "funzionalita": "VIF",
+        "status": true,
+        "master": "VG1",
+        "partner": "VG2",
+        "ip": "172.16.62.10"},
+        {"nome": "VG2",
+        "funzionalita": "VIF",
+        "status": false,
+        "master": "VG1",
+        "partner": "VG1",
+        "ip": "172.16.62.11"}
+    ]
+}
+]
+
+

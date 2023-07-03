@@ -1,0 +1,106 @@
+
+<!-- <mat-grid-list cols="4" rowHeight="2:1" [gutterSize]="'30px'" class="example-grid-list">
+    <mat-grid-tile>
+    </mat-grid-tile>
+    <mat-grid-tile [ngStyle]="{'background-color': nodo[0].nodi[0].status ? ' #2ecc71': ' #e74c3c'}" class="quadrotto">
+        <p>{{this.nodo[0].nodi[0].nome}}</p>
+        <p>{{this.nodo[0].nodi[0].status}}</p>
+    </mat-grid-tile>
+    <mat-grid-tile [ngStyle]="{'background-color': nodo[0].nodi[1].status ? ' #2ecc71': ' #e74c3c'}" class="quadrotto">
+        <p>{{this.nodo[0].nodi[0].nome}}</p>
+        <p>{{this.nodo[0].nodi[0].status}}</p>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+  
+
+
+
+
+<p>{{this.nodo[0].nodi[0].nome}}</p>
+<p>{{this.nodo[0].nodi[0].status}}</p>
+<p>{{this.nodo[0].nodi[1].nome}}</p>
+<p>{{this.nodo[0].nodi[1].status}}</p> -->
+
+<mat-grid-list cols="4" rowHeight="100px" [gutterSize]="'30px'" class="example-grid-list">
+    <mat-grid-tile class="quadrotto"
+        
+        colspan=3
+        rowspan=4
+        [ngStyle]="{'background-color': 'grey'}">
+        <mat-card class="example-card-central">
+            <mat-card-header>
+              <mat-card-title>Titolo</mat-card-title>
+              <mat-card-subtitle>Sottotitolo</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>Contenuti</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button class="button-class" mat-raised-button>Bottone 1</button>
+              <button class="button-class" mat-raised-button>Bottone 2</button>
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Titolo</mat-card-title>
+              <mat-card-subtitle>Sottotitolo</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>Contenuti</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button class="button-class" mat-raised-button>Bottone 1</button>
+              <button class="button-class" mat-raised-button>Bottone 2</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="quadrotto"
+        
+    colspan=1
+    rowspan=2
+    [ngStyle]="{'background-color': nodo[0].nodi[0].status ? ' #2ecc71': ' #e74c3c'}">
+    <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{this.nodo[0].nodi[0].nome}}</mat-card-title>
+              <mat-card-subtitle>{{this.nodo[0].componente}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{this.nodo[0].nodi[0].ip}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="button-class" color="primary" mat-raised-button>Start</button>
+                <button mat-raised-button color="warn">Stop</button>
+            </mat-card-actions>
+          </mat-card>
+    
+</mat-grid-tile>
+<mat-grid-tile class="quadrotto"
+        
+colspan=1
+rowspan=2
+[ngStyle]="{'background-color': nodo[0].nodi[1].status ? ' #2ecc71': ' #e74c3c'}">
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{this.nodo[0].nodi[1].nome}}</mat-card-title>
+      <mat-card-subtitle>{{this.nodo[0].componente}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{this.nodo[0].nodi[1].ip}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button-class"  mat-raised-button color="primary">Start</button>
+      <button mat-raised-button color="warn">Stop</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="example-button-container">
+    <button [ngStyle]="{'margin-bottom': '30px'}" [routerLink]="['/']" mat-fab color="primary" aria-label="Example icon button with a home icon">
+      <mat-icon iconPositionEnd>home</mat-icon>
+    </button>
+  </div>
+
+  

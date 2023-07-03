@@ -1,0 +1,29 @@
+
+<div mat-dialog-content class="diag-example">
+    <h3 mat-dialog-title >{{data.nome}}</h3>
+    <hr>
+    <ul>
+        <li>
+            Master Node {{data.master}}
+        </li>
+        <li>
+            {{data.ip}}
+        </li>
+        <li>
+            <ng-template *ngIf="data.status; then bloccoIf else bloccoElse"></ng-template>
+                <ng-template #bloccoIf>
+                    <p style="color: green" text="green">Operative</p>
+                    </ng-template>
+                    <ng-template #bloccoElse>
+                    <p style="color: red">Not Operative</p>
+                </ng-template>
+        </li>
+
+    </ul>
+    <div class="example-button-row">
+        <button mat-button mat-dialog-close cdkFocusInitial>Close</button>
+        <button  routerLink="poppo" mat-raised-button color="primary" >
+            Logs
+        </button>
+    </div>
+</div>
